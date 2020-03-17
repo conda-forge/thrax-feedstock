@@ -1,5 +1,5 @@
 {% set name = "thrax" %}
-{% set version = "1.3.2" %}
+{% set version = "1.3.3" %}
 
 package: 
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://www.opengrm.org/twiki/pub/GRM/ThraxDownload/{{ name }}-{{ version }}.tar.gz
-  sha256: 6911235a434681be18b03f173eb2b6e93241f98c559f50c748ba84122c69ba92
+  sha256: 5b570339f1f4416063e75b4e1626832835b701378fe3a691f5744378b9ac0d75
   
 build:
   number: 0
@@ -18,9 +18,9 @@ requirements:
     - {{ compiler('cxx') }}
     - make
   host:
-    - openfst ==1.7.6
+    - openfst ==1.7.7
   run:
-    - openfst ==1.7.6
+    - openfst ==1.7.7
     - python
 
 test:
