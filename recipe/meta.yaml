@@ -1,14 +1,14 @@
 {% set name = "thrax" %}
-{% set version = "1.3.3" %}
+{% set version = "1.3.4" %}
 
-package: 
+package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: http://www.opengrm.org/twiki/pub/GRM/ThraxDownload/{{ name }}-{{ version }}.tar.gz
-  sha256: 5b570339f1f4416063e75b4e1626832835b701378fe3a691f5744378b9ac0d75
-  
+  sha256: 8ecfecc9d4d4307e062748b2b6517f03af4e89175d339cadcaefeea6dd2e8b59
+
 build:
   number: 0
   skip: true  # [win]
