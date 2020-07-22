@@ -18,9 +18,9 @@ requirements:
     - {{ compiler('cxx') }}
     - make
   host:
-    - openfst ==1.7.7
+    - openfst ==1.7.9
   run:
-    - openfst ==1.7.7
+    - openfst ==1.7.9
     - python
 
 test:
