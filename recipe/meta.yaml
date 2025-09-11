@@ -17,6 +17,7 @@ requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - make
   host:
     - openfst ==1.8.4
