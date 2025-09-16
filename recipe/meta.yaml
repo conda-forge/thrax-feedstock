@@ -5,8 +5,9 @@ package:
   name: {{ name|lower }}
   version: {{ version }}
 
+# I'm using the IP address to bypass Cloudflare, which is serving up 403 errors to Azure.
 source:
-  url: http://www.opengrm.org/twiki/pub/GRM/ThraxDownload/{{ name }}-{{ version }}.tar.gz
+  url: http://206.196.111.47/twiki/pub/GRM/ThraxDownload/{{ name }}-{{ version }}.tar.gz
   sha256: 78dedada58a0a8543b4ea90c77a36783ac82495cf5456bec5d83baafac74b764
 
 build:
