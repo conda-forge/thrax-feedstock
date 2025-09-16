@@ -8,6 +8,9 @@ package:
 source:
   url: http://www.opengrm.org/twiki/pub/GRM/ThraxDownload/{{ name }}-{{ version }}.tar.gz
   sha256: 78dedada58a0a8543b4ea90c77a36783ac82495cf5456bec5d83baafac74b764
+  http_headers:
+    User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
 
 build:
   number: 0
